@@ -2,7 +2,7 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true
+        "node": true  // enables process.env in src/index.js
     },
     "extends": [
         "eslint:recommended",
@@ -21,7 +21,8 @@
         "prettier"
     ],
     "rules": {
-      "prettier/prettier": 2
+      "prettier/prettier": 2,
+      "no-unused-vars": "off"
     },
     "settings": {
       "react": {

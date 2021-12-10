@@ -5,6 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 const dist = 'dist';
 const bundle = 'bundle';
 
+// dev build if watching, prod build if not
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
