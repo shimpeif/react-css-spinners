@@ -1,1 +1,1 @@
-export { default as Ripple } from './Ring';
+export { default as Ring } from './Ring';

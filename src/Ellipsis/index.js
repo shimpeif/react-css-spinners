@@ -1,1 +1,1 @@
-export { default as Ripple } from './Ellipsis';
+export { default as Ellipsis } from './Ellipsis';
