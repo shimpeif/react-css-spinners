@@ -5,8 +5,8 @@ const Ripple = (props) => (
   <>
     <style>{styles}</style>
     <div className="lds-ripple">
-      <div></div>
-      <div></div>
+      <div />
+      <div />
     </div>
   </>
 );
