@@ -7,8 +7,10 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        //"prettier"
-        "eslint-config-prettier"
+        //"prettier",
+        "eslint-config-prettier",
+        "plugin:jest/recommended"
+
     ],
     "parserOptions": {
         "ecmaFeatures": {
