@@ -1,13 +1,14 @@
 const { createElement } = require('react');
 const express = require('express');
 const { renderToString } = require('react-dom/server');
-const { Heart } = require('react-css-spinners');
+const { Ripple, Heart } = require('react-css-spinners');
 
 const port = 3000;
 const app = express();
 
 app.get('*', (req, res) => {
-  const html = renderToString(createElement(Heart));
+  const html1 = renderToString(createElement(Ripple));
+  const html2 = renderToString(createElement(Heart));
 
   res.send(`
     <!doctype html>
@@ -17,7 +18,8 @@ app.get('*', (req, res) => {
       <title>Document</title>
     </head>
     <body>
-      ${html}
+      ${html1}
+      ${html2}
     </body>
     </html>
   `);
