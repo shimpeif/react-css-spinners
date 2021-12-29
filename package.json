@@ -18,7 +18,8 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "prettier-watch": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 9001 -c storybook"
+    "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,9 @@
     "@babel/preset-react": "^7.16.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.0.6",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
     "@storybook/react": "^6.4.9",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^27.4.5",
@@ -74,5 +78,6 @@
     "moduleNameMapper": {
       "\\.css$": "<rootDir>/mocks/styles.js"
     }
-  }
+  },
+  "dependencies": {}
 }
