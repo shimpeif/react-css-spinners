@@ -18,8 +18,8 @@
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "prettier-watch": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
     "prepare": "husky install",
-    "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006 -c storybook",
+    "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook -c storybook"
   },
   "repository": {
     "type": "git",
