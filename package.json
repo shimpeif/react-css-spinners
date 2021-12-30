@@ -19,11 +19,13 @@
     "prettier-watch": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
     "prepare": "husky install",
     "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006 -c storybook",
-    "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook -c storybook"
+    "build-storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook -c storybook",
+    "predeploy": "npm run build-storybook",
+    "deploy": "gh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shimpeif/react-css-spinners.git"
+    "url": "https://shimpeif.github.io/react-css-spinners"
   },
   "keywords": [
     "react",
@@ -57,6 +59,7 @@
     "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.0",
     "jest": "^27.4.5",
     "lint-staged": "^12.1.2",
