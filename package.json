@@ -1,5 +1,5 @@
 {
-  "name": "react-css-spinners",
+  "name": "react-pure-css-spinners",
   "version": "1.0.0",
   "description": "css only spinners for React ",
   "main": "dist/bundle.cjs.js",
