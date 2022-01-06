@@ -11,15 +11,16 @@
   <div id="container"></div>
   <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-  <script src="./node_modules/react-css-spinners/dist/bundle.umd.js"></script>
+  <script src="./node_modules/react-pure-css-spinners/dist/bundle.umd.js"></script>
   <script>
-    const { Heart, Ripple } = window.ReactCssSpinners
+    const { Heart, Ripple, Hourglass } = window.ReactCssSpinners
     const container = document.getElementById('container')
     const Container = React.createElement(
       React.Fragment,
       null,
       React.createElement(Heart),
-      React.createElement(Ripple)
+      React.createElement(Ripple),
+      React.createElement(Hourglass)
     )
     ReactDOM.render(
       Container,

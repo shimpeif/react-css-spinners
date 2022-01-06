@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "react-css-spinners": "file:../.."
+    "react-pure-css-spinners": "file:../.."
   },
   "name": "cdn",
   "version": "1.0.0",
