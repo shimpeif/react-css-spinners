@@ -1,6 +1,6 @@
 {
   "name": "react-pure-css-spinners",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "css only spinners for React ",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -41,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/shimpeif/react-pure-css-spinners/issues"
   },
-  "homepage": "https://github.com/shimpeif/react-pure-css-spinners#readme",
+  "homepage": "https://shimpeif.github.io/react-pure-css-spinners/",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
